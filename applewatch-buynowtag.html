@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <link rel="icon" type="image/x-icon" href="Images/Ecommerce Web.png">
+    <link rel="stylesheet" href="styel.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       
+
+  
+    <title>Product / Apple-Products</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+        <div class="container-fluid">
+          <img  src="Images/Ecommerce Web.png" style="width: 50px; height: 50px;" alt="image not found">
+          <a class="navbar-brand p-3 text-warning" style="font-weight: bold;  font-size: 35px; font-family: sans-serif;" href="#">Ecommerce-Web</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " style="align-items: center; font-family: sans-serif;">
+              <li class="nav-item">
+                <a class="nav-link " href="Web-Development.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-warning" aria-current="page" href="Product.html">Product</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="Contact-Us.html">Contact-Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About-Us.html">About-Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-4" id="cart-icon" href="#"  ><i  class="fas fa-shopping-bag " ></i></a>
+              </li>
+            </ul>
+            <div class="cart">
+              <h2 style="text-align: center; font-weight: bold; color: orange;" class="cart-title">Your Cart</h2>
+              <div class="cart-content">
+                <div class="cart-box">
+                  <img src="Images/smart watch-2.jpg" alt="" class="cart-img ">
+                  <div class="detail-box">
+                    <div class="card-product-title">Apple-Watch</div>
+                    <div  class="cart-price">$ 85.00</div>
+                    <input type="number" value="1" class="cart-quantity">
+                  </div>
+                  <i class="fas fa-trash cart-remove "></i>
+                </div>
+              </div>
+              <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"> $ 85.00</div>
+              </div> 
+              <button type="button" class="btn-buy"> <a style="text-decoration: none; color: white;" href="buynow-final.html">  Buy Now</button></a>
+              <i class="fas fa-x" id="close-cart"></i>
+              
+           </div> 
+          </div>
+        </div>
+      </nav>
+      
+    <section style="display: block;" class="container sproducts my-5 pt-5">
+        <div class="row mt-5" >
+            <div class="col-lg-5 col-md-12 col-12">
+                <img style="border: 1px solid grey;" class="image-fluid w-100" src="Images/smart watch-2.jpg" alt="Image are Not Found">
+               
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+
+            <h6>Home / Smart Watch</h6>
+            <h3 style="font-weight: bold;" class="py-4">Men's Fashion Apple Wathces </h3>
+            <h2 style="font-weight: bold;">price: $85.00</h2>
+            <select style="border: 1px solid black ; height: 40px;"  class="my-3">
+                <option >Select-Colour</option>
+                <option  style="font-weight: bold;" class="text-danger" >Red</option>
+                <option  style="font-weight: bold;" class="text-primary" >Blue</option>
+                <option  style="font-weight: bold;" class="text-success" >Green</option>
+            </select>
+            <input style="  width: 50px; margin-left: 30px; border: 1px solid black;" type="number" value="1"><br>
+            <a style="text-decoration: none;padding:  9px; margin-right: 10px; background-color:black; color: orange; font-weight: bold; font-size: 20px;" class="buy-btn mt-2" href="buynow-final.html">BuyNow</a>
+            <button  style="width: 40%; height: 10%; background-color:black; color: orange; font-weight: bold; font-size: 20px;" id="addcard-1" class="buy-btn mt-2">Add To Cart</button>
+            <h4 style="font-weight: bold;" class="mt-4 mb-2 ">Product Detailed :</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia impedit dicta qui soluta doloribus nulla amet cumque sint quibusdam, veritatis quisquam ex iste illum est quos, commodi, perspiciatis porro eaque harum voluptatem odit. Dolorem iste, </span>
+            
+        </div>
+        </div>
+    
+    </section>
+
+
+
+    <footer class="bg-dark text-white pt-5 pb-4 mt-3"data-aos="fade-up">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              
+              <h2 class="text-uppercase mb-4 font-weight-bold text-warning"><b>Ecomerce-Web</b></h2>
+              <p>If You Want to Buy the Online Things, so Please Contact me Ecomerce-Web is Best Web of Online Selling Website <br><b>Made By Anees Raza</b> </p>
+            </div>
+    
+            <div  class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h4 style="font-weight: bold;" class="text-uppercase mb-4  text-warning">Main-Menu</h4>
+              <div id="underline">
+              <p >
+                <a href="Web-Development.html" class="text-white " style="text-decoration: none;">Home</a>
+              </p>
+              <p>
+                <a href="Product.html"
+                class="text-warning active" aria-current="page"  style="text-decoration: none;">Products</a>
+              </p>
+              <p>
+                <a href="Contact-Us.html"
+                  class="text-white" style="text-decoration: none;">Contact-Us</a>
+              </p>
+              <p>
+                <a href="About-Us.html"
+                  class="text-white" style="text-decoration: none;">About-Us</a>
+              </p>
+            </div>
+            </div>
+            <div style="text-align: center;" class="col-md-3 col-lg-3 col-xl-2 mx-auto mt-3">
+              <h4 style="font-weight: bold;" class="text-uppercase mb-4  text-warning">Address </h4>
+              <p>
+                <i class="fas fa-home p-1  text-warning "></i> Karachi,Pakistan
+              </p>
+              <p>
+                <i class="fas fa-envelope  p-1  text-warning "></i>E-web@gmail.com
+              </p>
+              <p  style="cursor: pointer; ">
+                <i class="fas fa-phone p-1  text-warning ">  </i>+92-3004627851
+              </p>
+              <p style="cursor: pointer;">
+                <i class="fas fa-phone p-1 text-warning "></i>+021-111-222-88
+              </p>
+            </div>
+            
+            <hr class="mb-4">
+            <p class="text-light text-center p-2" style="font-family: sans-serif; ">&copy; Copyright 2022 All rights reserved by:<strong> <a style="text-decoration: none; color: orange;" href="Web-Development.html">Anees-Raza</a> </strong>
+            
+            
+          </div>
+        </div>
+      </footer>
+      <script>
+   
+        let cartIcon = document.querySelector('#cart-icon');
+        let cardBtn = document.querySelector('#addcard-1');
+        let cart = document.querySelector('.cart');
+        let closeCart = document.querySelector('#close-cart');
+        // -----Open-Cart---
+        cartIcon.onclick = ()=>{
+            cart.classList.add('active');
+        };
+        cardBtn.onclick = ()=>{
+            cart.classList.add('active');
+        };
+        // ----Close-Cart---
+        closeCart.onclick = ()=>{
+            cart.classList.remove('active');
+        };
+        // ---Card-Working--
+        if(document.readyState == 'loading'){
+          document.addEventListener('DOMContentLoaded' , ready)
+        }else{
+          ready();
+        };
+        // ---Making-Function--
+        function ready(){
+          // ----Remove Items From Cart--
+          var removeCartButtons = document.getElementsByClassName('cart-remove')
+          console.log(removeCartButtons)
+          for (var i = 0; i < removeCartButtons.length; i++ ){
+            var button =removeCartButtons[i]
+            button.addEventListener('click', removeCardItem )
+          };
+              
+          // ----Quantity-Changes--
+          var quantityInputs = document.getElementsByClassName('cart-quantity')
+          for (var i = 0; i < quantityInputs.length; i++ ){
+            var input= quantityInputs[i]
+            input.addEventListener('change', quantityChanged );
+          }
+          //  ---Add to Cart--
+          var addCart = document.getElementsByClassName('add-cart')
+          for (var i = 0; i < addCart.length; i++ ){
+            var button = addCart[i]
+            button.addEventListener('click', addCartClicked);
+          }
+        };
+          // ----Remove Items From Cart--
+          function removeCardItem(event){
+            var buttonClicked = event.target;
+            buttonClicked.parentElement.remove();
+            updatetotal();
+          }
+          // ---Quantity-Changes
+          function quantityChanged(event){
+            var input = event.target
+            if (isNaN(input.value) || input.value <= 0) {
+              input.value = 0;
+        
+            }
+            };
+            // --add to card--
+            function addCartClicked(event){
+              var button = event.target 
+              var shopProducts = button.parentElement
+              var title = shopProducts.getElementsByClassName('card-title')[0].innerText
+              console.log(title)
+            }
+        
+        
+        
+        
+        
+        
+          // ---Update-total--
+          function updatetotal(){
+            var cartContent = document.getElementsByClassName('cart-content')[0];
+            var cartBoxes = cartContent.getElementsByClassName('cart-box');
+            var total = 0;
+            for (var i = 0; i < cartBoxes.length; i++ ){
+              var cartBox = cardBoxes[i];
+              var priceElement = cartBox.getElementsByClassName('cart-price')[0]
+              var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0]
+              var price = parseFloat(priceElement.innerText.replace( '$',''));
+              var quantity = quantityElement.value; 
+              total = total + price * quantity;
+              // ----if price contain some cents value--
+              total = Math.round(total * 100)/100; 
+        
+              document.getElementsByClassName('total-price')[0].innerText= '$'+ total;
+        
+            };
+          };
+        
+         </script>
+    
+      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

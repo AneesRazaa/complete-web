@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <link rel="stylesheet" href="styel.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" type="image/x-icon" href="Images/Ecommerce Web.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+          
+  
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Ecomerce / Main</title>
+</head>
+<style>
+  .navbar{
+    background: rgba(0, 0, 0, 0.698);
+  }
+
+</style>
+
+<body>
+  <!-- <------nav-bar----- -->
+
+
+    
+  
+  <nav class="navbar navbar-expand-lg  fixed-top" >
+    <div class="container-fluid">
+      
+      <a class="navbar-brand p-3 text-warning" style="font-weight: bold; font-size: 35px; font-family: sans-serif;" href="Web-Development.html"><i class="fas fa-shopping-bag text-light"></i>  Ecommerce-Web </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " style="align-items: center; font-family: sans-serif;">
+          <li class="nav-item">
+            <a class="nav-link active text-warning" aria-current="page" href="Web-Development.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-light" href="Product.html">Product</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Contact-Us.html">Contact-Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="About-Us.html">About-Us</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link mx-4 text-light" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link mx-4 text-light" id="cart-icon" href="#"  ><i  class="fas fa-shopping-bag " ></i></a>
+          </li>
+        </ul>
+        <div class="cart">
+          <h2 style="text-align: center; font-weight: bold; color: orange;" class="cart-title">Your Cart</h2>
+          <!-- <div class="cart-content">
+            <div class="cart-box">
+              <img src="Images/smart watch-3.jpg" alt="" class="cart-img ">
+              <div class="detail-box">
+                <div class="card-product-title">Smart-Watch</div>
+                <div  class="cart-price">$ 45.00</div>
+                <input type="number" value="1" class="cart-quantity">
+              </div>
+              <i class="fas fa-trash cart-remove "></i>
+            </div>
+          </div> -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price"> $ 0.00</div>
+          </div> 
+          <button type="button" class="btn-buy">Buy Now</button>
+          <i class="fas fa-x" id="close-cart"></i>
+          
+       </div> 
+      </div>
+      
+    </div>
+    
+  </nav>
+  
+
+  <!-- Modal -->
+
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 style="margin-left: 40% ;" class="modal-title" id="staticBackdropLabel">Please Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="username">User Name</span>
+            <input type="text" class="form-control" placeholder="User Name" aria-label="uName" aria-describedby="uName">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="email">Email</span>
+            <input type="text" class="form-control" placeholder="Email" aria-label="email" aria-describedby="email">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="password">Password</span>
+            <input type="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="password">
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="setData()">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <!-- <-----slider------ -->
+  
+
+
+    <div id="carouselExampleIndicators" class="carousel slide  " data-bs-ride="carousel">
+      
+      <div class="carousel-inner ">
+          <div class="carousel-item ">
+              <img src="Images/slider images 1.webp" class="d-block w-100" alt="Images Was Not Found">
+          </div>
+          <div class="carousel-item ">
+              <img src="Images/slider images.webp" class="d-block w-100" alt="Images Was Not Found">
+          </div>
+          <div class="carousel-item  ">
+              <img src="Images/slider images 2.webp" class="d-block w-100" alt="Images Was Not Found">
+          </div>
+          <div class="carousel-item active">
+            <video  class="bg-video w-100 "  playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source  src="video/Ecommerce Advertising Video.mp4"  type="video/mp4" />
+            
+            </video>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+<span style=" background-color: orange; border-radius: 50%; width: 32%; height: 10%; ;" class="carousel-control-prev-icon" aria-hidden="false"></span>
+<span  class="visually-hidden">Previous</span>
+</button>
+      <button  class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+<span style=" background-color: orange; border-radius: 50%; width: 32%; height: 10%; ;" class="carousel-control-next-icon" aria-hidden="false"></span>
+<span class="visually-hidden">Next</span>
+</button>
+  </div>
+  
+  
+  <h2 class="text-warning " style= "margin-top: 20px; font-size: 50px; font-weight: bold; font-family: sans-serif; text-align: center; " >Smart-Watch</h2>
+  <div class="container"data-aos="fade-right">
+    <div class="row">
+      <div class="col-lg-4 mt-3 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="Images/smart watch-3.jpg" alt="Image Not Found">
+          <div class="card-body">
+            <div class="card-title">
+              <h3 class="text-center text-warning "><b> Local-Watch (D-13) </b></h3>
+            </div>
+            <div class="card-text">
+              <p class="text-center ">
+                <b >price: $45.00 </b>
+              </p>
+              <p><small class="mt-3 " style="font-weight: bold; font-size: 15px; font-family: sans-serif;">  This Watch is Comfortable For Every Hands</small></p>
+              <a style="margin-left: 33%;"id="buy-button"  class="btn btn-danger add-cart"  href="localwatch-buynowtag.html"><i class="fas fa-shopping-bag "></i>  Veiw More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="Images/smart watch-1.jpg" alt="Image Not Found">
+          <div class="card-body">
+            <div class="card-title">
+              <h3 class="text-center text-warning"><b>Smart-Watch (D-11)</b></h3>
+            </div>
+            <div class="card-text">
+              <p class="text-center ">
+                <b >price: $50.00 </b>
+
+              </p>
+              <p><small class="mt-3 " style="text-align:center ; font-weight: bold; font-size: 15px; font-family: sans-serif;">  This Watch is Comfortable For Every Hands</small></p>
+              <a   style="margin-left: 33%;" id="buy-button" class="btn btn-danger"  href="smartwatch-buynowtag (2).html"> <i class="fas fa-shopping-bag"></i>  Veiw More</a>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+     
+      <div class="col-lg-4 mt-3 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="Images/smart watch-2.jpg" alt="Image Not Found">
+          <div class="card-body">
+            <div class="card-title">
+              <h3 class="text-center text-warning"><b>Apple-Watch(D-12)</b></h3>
+            </div>
+            <div class="card-text">
+              <p class="text-center ">
+                <b >price: $85.00 </b>
+              </p>
+              <p><small class="mt-3 " style="font-weight: bold; font-size: 15px; font-family: sans-serif;">  This Watch is Comfortable For Every Hands</small></p>
+              <a style="margin-left: 33%;" id="buy-button" class="btn btn-danger"  href="applewatch-buynowtag.html"> <i class="fas fa-shopping-bag"></i>   Veiw More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+  <h2 class="text-warning " style="margin-top: 10px; font-weight: bold; font-size: 50px; font-family: sans-serif; text-align: center;" >Headphones</h2>
+  <div class="container" data-aos="fade-left">
+    <div class="row">
+      <div class="col-lg-4 mt-3 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="Images/headphone-1.jpg" alt="Image Not Found">
+          <div class="card-body">
+            <div class="card-title">
+              <h3 class="text-center text-warning"><b>Headphone(Audionic)</b></h3>
+            </div>
+            <div class="card-text">
+              <p class="text-center ">
+                <b >price: $100.00 </b>
+              </p>
+              <p><small class="mt-3 " style="font-weight: bold; font-size: 15px; font-family: sans-serif; ">  This Headphone is Fit in Every Heads</small></p>
+              <a style="margin-left: 33%;" id="buy-button" class="btn btn-danger"  href="headphonebuynow-tag-1.html"> <i class="fas fa-shopping-bag"></i>   Veiw More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="Images/headphone-4.jpg" alt="Image Not Found">
+          <div class="card-body">
+            <div class="card-title">
+              <h3 class="text-center text-warning"><b>Headphone(Apple)</b></h3>
+            </div>
+            <div class="card-text">
+              <p class="text-center ">
+                <b >price: $150.00 </b>
+              </p>
+              <p><small class="mt-3 " style="font-weight: bold; font-size: 15px; font-family: sans-serif; align-items: center;">  This Headphone is Fit in Every Heads</small></p>
+              <a style="margin-left: 33%;" id="buy-button" class="btn btn-danger"  href="headphonebuynow-tag-2.html"> <i class="fas fa-shopping-bag"></i>   Veiw More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3 col-md-4 col-sm-12">
+        <div class="card">
+          <img src="Images/headphone-3.jpg" alt="Image Not Found">
+          <div class="card-body">
+            <div class="card-title">
+              <h3 class="text-center text-warning"><b>Headphone (Ronin)</b></h3>
+            </div>
+            <div class="card-text">
+              <p class="text-center ">
+                <b >price: $200.00 </b>
+              </p>
+              <p><small class="mt-3 " style="font-weight: bold; font-size: 15px; font-family: sans-serif; align-items: center;">This Headphone is Fit in Every Heads</small></p>
+              <a style="margin-left: 33%;" id="buy-button" class="btn btn-danger"  href="headphonebuynow-tag-3.html"><i class="fas fa-shopping-bag"></i>   Veiw More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  
+  
+
+  <!-- <-----footer------ -->
+
+  
+  <footer  class="bg-dark text-white pt-5 pb-2 mt-3"data-aos="fade-up">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        
+          <h2 class="text-uppercase mb-4 font-weight-bold text-warning"><b>E - Web</b></h2>
+          <p>If You Want to Buy the Online Things, so Please Contact me Ecomerce-Web is Best Web of Online Selling Website <br><b class="text-warning">Made By Anees Raza</b> </p>
+        </div>
+
+        <div style="text-align: left ;" class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h4 style="font-weight: bold;" class="text-uppercase mb-4  text-warning ">Main-Menu</h4>
+          <div   id="underline">
+          <p >
+            <a href="Web-Development.html" class="text-warning active" aria-current="page"  style="text-decoration: none;"> Home</a>
+          </p>
+          <p>
+            <a href="Product.html"
+               class="text-white" style="text-decoration: none;"> Products</a>
+          </p>
+          <p>
+            <a href="Contact-Us.html"
+              class="text-white" style="text-decoration: none;"> Contact-Us</a>
+          </p>
+          <p>
+            <a href="About-Us.html"
+              class="text-white" style="text-decoration: none;">  About-Us</a>
+          </p>
+        </div>
+        </div>
+        <div style="text-align: left;" class="col-md-3 col-lg-3 col-xl-2 mx-auto mt-3">
+          <h4 style="font-weight: bold;" class="text-uppercase mb-4  text-warning">Address </h4>
+          <p>
+            <i class="text-warning fas fa-home p-1"></i> Karachi,Pakistan
+          </p>
+          <p>
+            <i class="text-warning fas fa-envelope  p-1"></i>  E-web@gmail.com
+          </p>
+          <p>
+            <i class="text-warning fas fa-phone p-1">  </i>+92-3004627851
+          </p>
+          <p>
+            <i class="text-warning fas fa-phone p-1"></i>+021-111-222-88
+          </p>
+        </div>
+       
+        <hr class="mb-4">
+        <p class="text-light text-center p-2" style="font-family: sans-serif; ">&copy; Copyright 2022 All rights reserved by:<strong> <a style="text-decoration: none; color: orange;" href="Web-Development.html">Anees-Raza</a> </strong>
+        
+        
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script>
+      const setData = () => {
+        var uName = document.getElementById('username').value
+        alert(uName)
+        var data = localStorage.setItem('UserName', uName)
+        console.log(uName)
+      }
+    </script>
+<!-- ----Add To Card--- -->
+ <script>
+   
+let cartIcon = document.querySelector('#cart-icon');
+let cart = document.querySelector('.cart');
+let closeCart = document.querySelector('#close-cart');
+// -----Open-Cart---
+cartIcon.onclick = ()=>{
+    cart.classList.add('active');
+};
+// ----Close-Cart---
+closeCart.onclick = ()=>{
+    cart.classList.remove('active');
+};
+// ---Card-Working--
+if(document.readyState == 'loading'){
+  document.addEventListener('DOMContentLoaded' , ready)
+}else{
+  ready();
+};
+// ---Making-Function--
+function ready(){
+  // ----Remove Items From Cart--
+  var removeCartButtons = document.getElementsByClassName('cart-remove')
+  console.log(removeCartButtons)
+  for (var i = 0; i < removeCartButtons.length; i++ ){
+    var button =removeCartButtons[i]
+    button.addEventListener('click', removeCardItem )
+  };
+      
+  // ----Quantity-Changes--
+  var quantityInputs = document.getElementsByClassName('cart-quantity')
+  for (var i = 0; i < quantityInputs.length; i++ ){
+    var input= quantityInputs[i]
+    input.addEventListener('change', quantityChanged );
+  }
+  //  ---Add to Cart--
+  var addCart = document.getElementsByClassName('add-cart')
+  for (var i = 0; i < addCart.length; i++ ){
+    var button = addCart[i]
+    button.addEventListener('click', addCartClicked);
+  }
+};
+  // ----Remove Items From Cart--
+  function removeCardItem(event){
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.remove();
+    updatetotal();
+  }
+  // ---Quantity-Changes
+  function quantityChanged(event){
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+      input.value = 0;
+
+    }
+    };
+    // --add to card--
+    function addCartClicked(event){
+      var button = event.target 
+      var shopProducts = button.parentElement
+      var title = shopProducts.getElementsByClassName('card-title')[0].innerText
+      console.log(title)
+    }
+
+
+
+
+
+
+  // ---Update-total--
+  function updatetotal(){
+    var cartContent = document.getElementsByClassName('cart-content')[0];
+    var cartBoxes = cartContent.getElementsByClassName('cart-box');
+    var total = 0;
+    for (var i = 0; i < cartBoxes.length; i++ ){
+      var cartBox = cardBoxes[i];
+      var priceElement = cartBox.getElementsByClassName('cart-price')[0]
+      var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0]
+      var price = parseFloat(priceElement.innerText.replace( '$',''));
+      var quantity = quantityElement.value; 
+      total = total + price * quantity;
+      // ----if price contain some cents value--
+      total = Math.round(total * 100)/100; 
+
+      document.getElementsByClassName('total-price')[0].innerText= '$'+ total;
+
+    };
+  };
+
+ </script>
+</body>
+
+</html>
